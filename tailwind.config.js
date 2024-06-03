@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         light:{
           logo: '#15355E',   
-          button : '#A43131', 
+          daftar : '#DACEE4', 
           klik : '#7E1E1E',
           header : '#F3F4F6', 
         }

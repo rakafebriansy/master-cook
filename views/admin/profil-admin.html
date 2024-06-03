@@ -19,7 +19,7 @@
             </div>
             <ul class="hidden items-center justify-center gap-6 md:flex">
                 <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="dashboard-admin.html">Dahsboard</a>
+                    <a href="dashboard-admin.html">Dashboard</a>
                 </li>
                 <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
                     <a href="melihat-data-akun.html">Data Akun</a>
@@ -36,84 +36,63 @@
     </header>
     <!-- end -->
 
-    <div class="bg-white px-2 py-20 flex justify-center">
+    <div class="bg-white p-4 flex justify-center">
         <div class="max-w-6xl text-center">
             <img src="/image/profil.svg" alt="" class="mx-auto w-3/5">
         </div>
+    </div>
 
-        <div class="flex space-x-4">
-            <div class="bg-white overflow-hidden shadow rounded-lg border box">
-                <div class="px-4 py-5 sm:px-6">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-lg leading-6 font-medium text-gray-900">
-                            Assigned Project Sites
-                        </h3>
-                        <button class="text-sm font-medium text-gray-500 mx-4">
-                            Add
-                        </button>
-                    </div>
-                    <p class="mt-1 max-w-2xl text-sm text-gray-500">
-                        You can find the project sites assigned to this contact below.
-                    </p>
+    <div class="flex space-x-4 justify-center ">
+        <div class="bg-white overflow-hidden shadow rounded-lg ">           
+            <div class=" px-4 py-5 sm:p-0">
+                <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt class="text-sm font-medium text-black">
+                        Nama 
+                    </dt>
+                    <dd class="mt-1 text-sm text-black sm:mt-0 sm:col-span-2">
+                        Elvy Yunia
+                    </dd>
                 </div>
-                <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
-                    <dl class="sm:divide-y sm:divide-gray-200">
-                        <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                RG 301 <br>
-                                Wahl Ranch
-                            </dd>
-                            <button class="text-sm font-medium text-gray-500">
-                                Remove
-                            </button>
-                        </div>
-                        <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                RG 301 <br>
-                                Lagrand Valley
-                            </dd>
-                            <button class="text-sm font-medium text-gray-500">
-                                Remove
-                            </button>
-                        </div>
-                        <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                RG 301 <br>
-                                Wahl Ranch
-                            </dd>
-                            <button class="text-sm font-medium text-gray-500">
-                                Remove
-                            </button>
-                        </div>
-                        <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                RG 301 <br>
-                                Lagrand Valley
-                            </dd>
-                            <button class="text-sm font-medium text-gray-500">
-                                Remove
-                            </button>
-                        </div>
-                        <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                RG 301 <br>
-                                Wahl Ranch
-                            </dd>
-                            <button class="text-sm font-medium text-gray-500">
-                                Remove
-                            </button>
-                        </div>
-                        
-                    </dl>
+                <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt class="text-sm font-medium text-black">
+                        Username
+                    </dt>
+                    <dd class="mt-1 text-sm text-black sm:mt-0 sm:col-span-2">
+                        @pacar_minggyu
+                    </dd>
+                </div>
+                <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt class="text-sm font-normal text-black">
+                        No Telepon
+                    </dt>
+                    <dd class="mt-1 text-sm text-black sm:mt-0 sm:col-span-2">
+                        085649554149
+                    </dd>
+                </div>
+                <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt class="text-sm font-normal text-black">
+                        Password
+                    </dt>
+                    <dd class="mt-1 text-sm text-black sm:mt-0 sm:col-span-2">
+                        Mas@kY0k!
+                    </dd>
+                </div>
+                <div class="py-3 px-2 flex justify-end">
+                    <button type="button"
+                        class="mr-3 text-sm bg-light-logo hover:bg-blue-900 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline">Edit</button>
+                    <button type="button"
+                        class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline ">Logout</button>
+            
                 </div>
             </div>
         </div>
     </div>
+        
+    <!-- footer -->
+    <div class=" rounded-lg w-full bg-gray-100 text-center items-end absolute inset-x-0 bottom-0">
+        <h1 class="py-6 text-base font-normal text-gray-400 text-center ">© 2024 CookingMaster. All rights reserved.</h1>
+    </div>
     
-
-
-    
-
-    
+         
 </body>
 </html>
