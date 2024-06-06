@@ -11,6 +11,7 @@
 
 </head>
 <body class="font-roboto">
+<?php $base = '/master-cook/'; ?>
     
     <div class="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-md">
@@ -26,28 +27,28 @@
                     <div>
                         <label class="block text-sm font-normal leading-5  text-black">Nama</label>
                         <div class="mt-1 relative rounded-md shadow-sm">
-                            <input id="nama" name="nama" type="text" class="appearance-none block w-full px-3 py-2 border border-black rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                            <input required="" id="nama" name="nama" type="text" class="appearance-none block w-full px-3 py-2 border border-black rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
                         </div>
                     </div>
 
                     <div class="mt-6">
                         <label class="block text-sm font-normal leading-5  text-black">Username</label>
                         <div class="mt-1 relative rounded-md shadow-sm">
-                            <input id="username" name="username" type="text" class="appearance-none block w-full px-3 py-2 border border-black rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                            <input required="" id="username" name="username" type="text" class="appearance-none block w-full px-3 py-2 border border-black rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
                         </div>
                     </div>
 
                     <div class="mt-6">
                         <label class="block text-sm font-normal leading-5  text-black">No Telp</label>
                         <div class="mt-1 relative rounded-md shadow-sm">
-                            <input id="telp" name="telp" type="number" class="appearance-none block w-full px-3 py-2 border border-black rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                            <input required="" id="telp" name="telp" type="number" class="appearance-none block w-full px-3 py-2 border border-black rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
                         </div>
                     </div>
 
                     <div class="mt-6">
                         <label class="block text-sm font-normal leading-5  text-black">Password</label>
                         <div class="mt-1 relative rounded-md shadow-sm">
-                            <input id="password" name="password" type="password" class="appearance-none block w-full px-3 py-2 border border-black rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                            <input required="" id="password" name="password" type="password" class="appearance-none block w-full px-3 py-2 border border-black rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
                         </div>
                     </div> 
     
@@ -59,7 +60,7 @@
                         </span>
                     </div>
                     <div class="mt-6 text-end">
-                        <p class="text-light-logo text-sm font-semibold cursor-pointer">Have Account</p>
+                        <p href="<?=$base . 'admin-login'?>" class="text-light-logo text-sm font-semibold cursor-pointer">Have Account</p>
                     </div> 
                 </form>
     

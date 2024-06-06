@@ -3,7 +3,7 @@
 namespace App\Models;
 use App\Database;
 
-class TipeKamar
+class PendaftaranKelas
 { 
     private $db;
     private $table = 'pendaftaran_kelas';

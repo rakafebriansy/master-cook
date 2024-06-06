@@ -3,7 +3,7 @@
 namespace App\Models;
 use App\Database;
 
-class TipeKamar
+class User
 { 
     private $db;
     private $table = 'user';

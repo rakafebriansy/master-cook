@@ -46,7 +46,7 @@
                         <span class="block text-gray-400 font-normal">Upload cover</span>
                         </div>
                         </div>   
-                        <input type="file" class="h-full w-full opacity-0" name="">   
+                        <input required="" type="file" class="h-full w-full opacity-0" name="">   
                     </div>
                 </div>
             </div>
@@ -56,9 +56,9 @@
                 <label class="block text-black text-xl font-semibold mb-2">
                     Judul
                 </label>
-                <input
+                <input required=""
                     class=" rounded-xl w-full py-2 px-3 text-gray-900 font-normal bg-transparent outline-none"
-                    id="nama" type="text" placeholder="inputan">
+                    id="nama" type="text" placeholder="input required=""an">
             </div>
             
             <div class="mb-4 border border-black py-4 rounded-md px-6">
@@ -81,22 +81,22 @@
 
             <div class="flex items-center mb-5 border border-black py-2 px-6">
                 <label class="w-20 inline-block text-right  text-black">Pukul : </label>
-                <input type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
+                <input required="" type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
             </div>
 
             <div class="flex items-center mb-5 border border-black py-2 px-6">
                 <label class="w-20 inline-block text-right  text-black">Tanggal : </label>
-                <input type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
+                <input required="" type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
             </div>
 
             <div class="flex items-center mb-5 border border-black py-2 px-6">
                 <label class="w-20 inline-block text-right  text-black">Lokasi :  </label>
-                <input type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
+                <input required="" type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
             </div>
 
             <div class="flex items-center mb-5 border border-black py-2 px-6">
                 <label class="w-20 inline-block text-right  text-black">Harga : </label>
-                <input type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
+                <input required="" type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
             </div>
 
             <button class=" py-3 px-4 flex w-full justify-center bg-light-logo hover:bg-blue-900 text-white text-xl font-semibold shadow-md rounded-xl"

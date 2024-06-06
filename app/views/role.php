@@ -21,14 +21,14 @@
             <h1 class="text-base text-center pt-8">Silahkan masuk sesuai akun anda !</h1>
             <ul class="mt-16 grid grid-cols-1 gap-8 text-center text-slate-700 md:grid-cols-3 items-center">
 
-                <li class="rounded-xl bg-white w-[20rem] h-[14rem] p-3 flex items-center justify-center flex-col shadow-lg cursor-pointer"> 
+                <li class="rounded-xl bg-white w-full h-[14rem] p-3 flex items-center justify-center flex-col shadow-lg cursor-pointer"> 
                     <a href="<?=$base . 'pengguna-register'?>" class="block">
                         <img src="./image/member.svg" alt="" class="mx-auto h-10 w-10">
                         <h3 class="my-3 font-display font-medium">Member</h3>
                         <p>Member adalah seseorang yang ingin belajar memasak</p>                    
                     </a>     
                 </li>
-                <li class="rounded-xl bg-white w-[20rem] h-[14rem] p-3 flex items-center justify-center flex-col shadow-lg cursor-pointer">
+                <li class="rounded-xl bg-white w-full h-[14rem] p-3 flex items-center justify-center flex-col shadow-lg cursor-pointer">
                     <a href="<?=$base . 'chef-register'?>" class="block">
                         <img src="./image/admin.svg"
                                 alt="" class="mx-auto h-10 w-10">
@@ -37,7 +37,7 @@
                     </a>       
                 </li>     
                 
-                <li class="rounded-xl bg-white w-[20rem] h-[14rem] p-3 flex items-center justify-center flex-col shadow-lg cursor-pointer">
+                <li class="rounded-xl bg-white w-full h-[14rem] p-3 flex items-center justify-center flex-col shadow-lg cursor-pointer">
                     <a href="<?=$base . 'admin-register'?>" class="block">
                         <img src="./image/admin.svg" alt="" class="mx-auto h-10 w-10">
                         <h3 class="my-3 font-display font-medium">Admin</h3> 
