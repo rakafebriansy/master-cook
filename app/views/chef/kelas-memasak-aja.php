@@ -20,25 +20,25 @@
                 <h1 class="justify-center text-3xl font-bold text-light-logo cursor-pointer">MASTER COOK</h1>
             </div>
             <ul class="hidden items-center justify-center gap-6 md:flex">
-                <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="dashboard-admin.html">Dashboard</a>
+            <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
+                    <a href="<?=$baseurl . 'chef-dashboard'?>">Dashboard</a>
                 </li>
                 <li class="pt-1.5 font-dm text-sm font-semibold text-slate-900">
-                    <a href="#">Kelas Memasak</a>
-                </li>
+                    <a href="<?=$baseurl . 'chef-kelas-memasak'?>">Kelas Memasak</a>
+                </li>       
                          
             </ul>
             <div class="flex-grow"></div>
-            <div class="hidden items-center justify-center gap-10 md:flex">
-                <img src="/image/user1.svg" alt="" class="w-full h-[50%]">
-            </div>
+            <a href="<?=$baseurl . 'chef-profil'?>" class="hidden items-center justify-center gap-10 md:flex">
+                <img src="./image/user1.svg" alt="" class="w-full h-[50%]">
+            </a>
         </nav>
     </header>
     <!-- navbar end -->
 
     <!-- hero start -->
     <div>
-        <img src="/image/hero1.png" alt="" class="w-full pt-4">
+        <img src="./image/hero1.png" alt="" class="w-full pt-4">
     </div>
 
     <!-- card start -->
@@ -51,7 +51,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pt-8">
                 <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="/image/card1.png" alt="" class="w-full h-64 object-cover">
+                    <img src="./image/card1.png" alt="" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Masak Olahan Daging Bareng Chef Arnold</h3>
                         <p class="text-black text-base text-center">Belajar masak dengan berbagai olahan daging sapi yang nikmat</p>
@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="/image/card1.png" alt=""
+                    <img src="./image/card1.png" alt=""
                         class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Menu Sehat ala Chef Arnold</h3>
@@ -81,7 +81,7 @@
                 
 
                 <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="/image/card1.png" alt=""
+                    <img src="./image/card1.png" alt=""
                         class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Chef Arnold bagi Resep Rahasia?!</h3>
@@ -96,7 +96,7 @@
                 </div> 
                 
                 <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="/image/card1.png" alt="" class="w-full h-64 object-cover">
+                    <img src="./image/card1.png" alt="" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Masak Olahan Daging Bareng Chef Arnold</h3>
                         <p class="text-black text-base text-center">Belajar masak dengan berbagai olahan daging sapi yang nikmat</p>
@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="/image/card1.png" alt=""
+                    <img src="./image/card1.png" alt=""
                         class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Menu Sehat ala Chef Arnold</h3>
@@ -126,7 +126,7 @@
                 
 
                 <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="/image/card1.png" alt=""
+                    <img src="./image/card1.png" alt=""
                         class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Chef Arnold bagi Resep Rahasia?!</h3>
@@ -149,7 +149,7 @@
     <section class="py-20 bg-white">
         <div class="grid grid-cols-1 gap-x-6 gap-y-4 px-10">
             <div class="rounded-3xl w-full h-[10rem] flex flex-col justify-center items-center bg-gray-100 text-center relative">
-                <img src="/image/Vector.png" alt="" class="right-0 w-[25%] absolute z-10 h-full">
+                <img src="./image/Vector.png" alt="" class="right-0 w-[25%] absolute z-10 h-full">
                 <h1 class="text-center text-2xl font-semibold text-light-logo">Cooking Master</h1>
             </div>
             <div class="rounded-lg w-full py-6 bg-gray-100 text-center">

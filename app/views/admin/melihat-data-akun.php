@@ -30,7 +30,7 @@
                 </li>           
             </ul>
             <div class="flex-grow"></div>
-            <div class="hidden items-center justify-center gap-10 md:flex">
+            <div href="<?=$baseurl . 'admin-profil'?>" class="hidden items-center justify-center gap-10 md:flex">
                 <img src="./image/user1.svg" alt="" class="w-full h-[50%]">
             </div>
         </nav>

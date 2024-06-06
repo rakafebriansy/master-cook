@@ -20,15 +20,12 @@
                 <h1 class="justify-center text-3xl font-bold text-light-logo cursor-pointer">MASTER COOK</h1>
             </div>
             <ul class="hidden items-center justify-center gap-6 md:flex">
-                <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="<?=$baseurl . 'admin-dashboard'?>">Dashboard</a>
+            <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
+                    <a href="<?=$baseurl . 'chef-dashboard'?>">Dashboard</a>
                 </li>
                 <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="<?=$baseurl . 'admin-data-akun'?>">Data Akun</a>
-                </li>    
-                <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="<?=$baseurl . 'admin-verifikasi-akun'?>">Verifikasi Akun</a>
-                </li>           
+                    <a href="<?=$baseurl . 'chef-kelas-memasak'?>">Kelas Memasak</a>
+                </li>               
             </ul>
             <div class="flex-grow"></div>
             <a href="<?=$baseurl . 'admin-profil'?>" class="hidden items-center justify-center gap-10 md:flex">

@@ -20,18 +20,15 @@
                 <h1 class="justify-center text-3xl font-bold text-light-logo cursor-pointer">MASTER COOK</h1>
             </div>
             <ul class="hidden items-center justify-center gap-6 md:flex">
-                <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="<?=$baseurl . 'admin-dashboard'?>">Dashboard</a>
+            <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
+                    <a href="<?=$baseurl . 'pengguna-dashboard'?>">Dashboard</a>
                 </li>
                 <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="<?=$baseurl . 'admin-data-akun'?>">Data Akun</a>
-                </li>    
-                <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="<?=$baseurl . 'admin-verifikasi-akun'?>">Verifikasi Akun</a>
-                </li>           
+                    <a href="<?=$baseurl . 'pengguna-kelas-memasak'?>">Kelas Memasak</a>
+                </li>                 
             </ul>
             <div class="flex-grow"></div>
-            <a href="<?=$baseurl . 'admin-profil'?>" class="hidden items-center justify-center gap-10 md:flex">
+            <a href="<?=$baseurl . 'pengguna-profil'?>" class="hidden items-center justify-center gap-10 md:flex">
                 <img src="./image/user1.svg" alt="" class="w-full h-[50%]">
             </a>
         </nav>
@@ -80,11 +77,10 @@
                     </dd>
                 </div>
                 <div class="py-3 px-2 flex justify-end">
-                    <a href="<?=$baseurl . 'admin-edit-profil'?>"
-                        class="mr-3 text-sm bg-light-logo hover:bg-blue-900 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline">Edit</a>
-                    <a href="<?=$baseurl . 'logout'?>"
-                        class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline ">Logout</a>
-            
+                    <button type="button"
+                        class="mr-3 text-sm bg-light-logo hover:bg-blue-900 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline">Simpan</button>
+                    <button type="button"
+                        class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline ">Batal</button>
                 </div>
             </div>
         </div>

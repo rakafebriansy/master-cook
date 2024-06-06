@@ -20,17 +20,17 @@
                 <h1 class="justify-center text-3xl font-bold text-light-logo cursor-pointer">MASTER COOK</h1>
             </div>
             <ul class="hidden items-center justify-center gap-6 md:flex">
-                <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="dashboard-admin.html">Dashboard</a>
-                </li>
                 <li class="pt-1.5 font-dm text-sm font-semibold text-slate-900">
-                    <a href="melihat-data-akun.html">Kelas Memasak</a>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
+                    <a href="<?=$baseurl . 'pengguna-kelas-memasak'?>">Kelas Memasak</a>
                 </li>          
             </ul>
             <div class="flex-grow"></div>
-            <div class="hidden items-center justify-center gap-10 md:flex">
+            <a href="<?=$baseurl . 'pengguna-profil'?>" class="hidden items-center justify-center gap-10 md:flex">
                 <img src="./image/user1.svg" alt="" class="w-full h-[50%]">
-            </div>
+            </a>
         </nav>
     </header>
     <!-- navbar end -->

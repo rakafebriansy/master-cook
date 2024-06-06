@@ -20,25 +20,25 @@
                 <h1 class="justify-center text-3xl font-bold text-light-logo cursor-pointer">MASTER COOK</h1>
             </div>
             <ul class="hidden items-center justify-center gap-6 md:flex">
-                <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="dashboard-chef.html">Dashboard</a>
+            <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
+                    <a href="<?=$baseurl . 'chef-dashboard'?>">Dashboard</a>
                 </li>
                 <li class="pt-1.5 font-dm text-sm font-semibold text-slate-900">
-                    <a href="#">Kelas Memasak</a>
-                </li>
+                    <a href="<?=$baseurl . 'chef-kelas-memasak'?>">Kelas Memasak</a>
+                </li>       
                          
             </ul>
             <div class="flex-grow"></div>
-            <div class="hidden items-center justify-center gap-10 md:flex">
-                <img src="/image/user1.svg" alt="" class="w-full h-[50%]">
-            </div>
+            <a href="<?=$baseurl . 'chef-profil'?>" class="hidden items-center justify-center gap-10 md:flex">
+                <img src="./image/user1.svg" alt="" class="w-full h-[50%]">
+            </a>
         </nav>
     </header>
     <!-- navbar end -->
 
     <!-- hero start -->
     <div class="flex flex-col space-y-5 mx-10">
-        <img src="/image/lihat-chef.svg" alt="" class="w-full pt-4">
+        <img src="./image/lihat-chef.svg" alt="" class="w-full pt-4">
     </div>
 
     <!-- main -->
@@ -69,25 +69,25 @@
 
             <div class="bg-white rounded-lg">
                 <div class="flex items-center mb-5 py-2 px-6">
-                    <img src="/image/Time Circle 6.svg" alt="" class="w-7">
+                    <img src="./image/Time Circle 6.svg" alt="" class="w-7">
                     <label class="w-20 inline-block text-right  text-black">Pukul : </label>
                     <p>13:50 - 16:10 WIB</p>
                 </div>
 
                 <div class="flex items-center mb-5 py-2 px-6">
-                    <img src="/image/Calender 1.svg" alt="" class="w-8">
+                    <img src="./image/Calender 1.svg" alt="" class="w-8">
                     <label class="w-20 inline-block text-right  text-black">Tanggal : </label>
                     <p>21 Mei 2024</p>
                 </div>
 
                 <div class="flex items-center mb-5 py-2 px-6">
-                    <img src="/image/Location.svg" alt="" class="w-6">
+                    <img src="./image/Location.svg" alt="" class="w-6">
                     <label class="w-20 inline-block text-right  text-black">Lokasi : </label>
                     <p>Jember Town Square</p>
                 </div>
 
                 <div class="flex items-center mb-5 py-2 px-6">
-                    <img src="/image/Tag.svg" alt="" class="w-6">
+                    <img src="./image/Tag.svg" alt="" class="w-6">
                     <label class="w-20 inline-block text-right  text-black">Lokasi : </label>
                     <p>150.000</p>
                 </div>
@@ -109,7 +109,7 @@
     <section class="py-20 bg-white">
         <div class="grid grid-cols-1 gap-x-6 gap-y-4 px-10">
             <div class="rounded-3xl w-full h-[10rem] flex flex-col justify-center items-center bg-gray-100 text-center relative">
-                <img src="/image/Vector.png" alt="" class="right-0 w-[30%] absolute z-10 h-full">
+                <img src="./image/Vector.png" alt="" class="right-0 w-[30%] absolute z-10 h-full">
                 <h1 class="text-center text-2xl font-semibold text-light-logo">Cooking Master</h1>
             </div>
             <div class="rounded-3xl w-full py-6 bg-gray-100 text-center">

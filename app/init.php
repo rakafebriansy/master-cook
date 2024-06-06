@@ -14,6 +14,8 @@ require 'app/Controllers/RegisterController.php';
 require 'app/Controllers/RoleController.php';
 require 'app/Controllers/DashboardController.php';
 require 'app/Controllers/AkunController.php';
+require 'app/Controllers/ProfilController.php';
+require 'app/Controllers/KelasController.php';
 // require 'app/Middleware/MustLoginMiddleware.php';
 
 ?>

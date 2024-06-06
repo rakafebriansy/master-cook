@@ -20,28 +20,25 @@
                 <h1 class="justify-center text-3xl font-bold text-light-logo cursor-pointer">MASTER COOK</h1>
             </div>
             <ul class="hidden items-center justify-center gap-6 md:flex">
-                <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="<?=$baseurl . 'admin-dashboard'?>">Dashboard</a>
+            <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
+                    <a href="<?=$baseurl . 'chef-dashboard'?>">Dashboard</a>
                 </li>
                 <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="<?=$baseurl . 'admin-data-akun'?>">Data Akun</a>
-                </li>    
-                <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="<?=$baseurl . 'admin-verifikasi-akun'?>">Verifikasi Akun</a>
-                </li>           
+                    <a href="<?=$baseurl . 'chef-kelas-memasak'?>">Kelas Memasak</a>
+                </li>              
             </ul>
             <div class="flex-grow"></div>
-            <a href="<?=$baseurl . 'admin-profil'?>" class="hidden items-center justify-center gap-10 md:flex">
+            <div class="hidden items-center justify-center gap-10 md:flex">
                 <img src="./image/user1.svg" alt="" class="w-full h-[50%]">
-            </a>
+            </div>
         </nav>
     </header>
     <!-- end -->
 
     <div class="bg-white p-4 flex justify-center">
-        <div class="max-w-6xl text-center">
+        <a href="<?=$baseurl . 'chef-profil'?>" class="max-w-6xl text-center">
             <img src="./image/profil.svg" alt="" class="mx-auto w-3/5">
-        </div>
+        </a>
     </div>
 
     <div class="flex space-x-4 justify-center ">
@@ -80,11 +77,10 @@
                     </dd>
                 </div>
                 <div class="py-3 px-2 flex justify-end">
-                    <a href="<?=$baseurl . 'admin-edit-profil'?>"
-                        class="mr-3 text-sm bg-light-logo hover:bg-blue-900 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline">Edit</a>
-                    <a href="<?=$baseurl . 'logout'?>"
-                        class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline ">Logout</a>
-            
+                    <a href="<?=$baseurl . 'pengguna-edit-profil'?>"
+                        class="mr-3 text-sm bg-light-logo hover:bg-blue-900 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline">Simpan</a>
+                    <a href="<?=$baseurl . 'pengguna-edit-profil'?>"
+                        class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline ">Batal</a>
                 </div>
             </div>
         </div>

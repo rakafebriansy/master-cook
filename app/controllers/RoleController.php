@@ -50,6 +50,11 @@ class RoleController
         }
         View::set('login');
     }
+    public function logout()
+    {
+        session_destroy();
+        View::redirectTo($this->baseurl);
+    }
 }
 
 ?>

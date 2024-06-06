@@ -30,7 +30,7 @@
             </ul>
             <div class="flex-grow"></div>
             <div class="hidden items-center justify-center gap-10 md:flex">
-                <img src="/image/user1.svg" alt="" class="w-full h-[50%]">
+                <img src="./image/user1.svg" alt="" class="w-full h-[50%]">
             </div>
         </nav>
     </header>
@@ -38,7 +38,7 @@
 
     <!-- hero start -->
     <div class="flex flex-col space-y-5 mx-10">
-        <img src="/image/lihat-chef.svg" alt="" class="w-full pt-4">
+        <img src="./image/lihat-chef.svg" alt="" class="w-full pt-4">
     </div>
 
     <!-- main -->
@@ -48,9 +48,6 @@
 
     <div class="bg-gray-100 mt-20">
         <div class="flex flex-col space-y-5 mx-10">
-
-              
-            
             <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">    
                 <h3 class="text-3xl font-semibold text-black pb-4">Ringkasan Kelas</h3>
                 <p class="text-gray-500 font-normal text-lg">
@@ -66,25 +63,25 @@
             </div>
 
             <div class="flex items-center mb-5 border border-black py-2 px-6">
-                <img src="/image/Time Circle 6.svg" alt="" class="w-7">
+                <img src="./image/Time Circle 6.svg" alt="" class="w-7">
                 <label class="w-20 inline-block text-right  text-black">Pukul : </label>
                 <p class=" flex-1 py-2 text-gray-500"> 13:50 - 16:10 WIB</p>
             </div>
 
             <div class="flex items-center mb-5 border border-black py-2 px-6">
-                <img src="/image/Calender 1.svg" alt="" class="w-8">
+                <img src="./image/Calender 1.svg" alt="" class="w-8">
                 <label class="w-20 inline-block text-right  text-black">Tanggal : </label>
                 <p class=" flex-1 py-2 text-gray-500"> 21 Mei 2024</p>
             </div>
 
             <div class="flex items-center mb-5 border border-black py-2 px-6">
-                <img src="/image/Location.svg" alt="" class="w-6">
+                <img src="./image/Location.svg" alt="" class="w-6">
                 <label class="w-20 inline-block text-right  text-black">Lokasi :  </label>
                 <p class=" flex-1 py-2 text-gray-500">Jember Town Square</p>
             </div>
 
             <div class="flex items-center mb-5 border border-black py-2 px-6">
-                <img src="/image/Tag.svg" alt="" class="w-6">
+                <img src="./image/Tag.svg" alt="" class="w-6">
                 <label class="w-20 inline-block text-right  text-black">Harga : </label>
                 <p class=" flex-1 py-2 text-gray-500">150.000</p>
             </div>
@@ -99,7 +96,7 @@
     <section class="py-20 bg-white">
         <div class="grid grid-cols-1 gap-x-6 gap-y-4 px-10">
             <div class="rounded-3xl w-full h-[10rem] flex flex-col justify-center items-center bg-gray-100 text-center relative">
-                <img src="/image/Vector.png" alt="" class="right-0 w-[25%] absolute z-10 h-full">
+                <img src="./image/Vector.png" alt="" class="right-0 w-[25%] absolute z-10 h-full">
                 <h1 class="text-center text-2xl font-semibold text-light-logo">Cooking Master</h1>
             </div>
             <div class="rounded-3xl w-full py-6 bg-gray-100 text-center">
