@@ -60,7 +60,7 @@
                         </span>
                     </div>
                     <div class="mt-6 text-end">
-                        <p href="<?=$base . 'admin-login'?>" class="text-light-logo text-sm font-semibold cursor-pointer">Have Account</p>
+                        <a href="<?=$base . 'admin-login'?>" class="text-light-logo text-sm font-semibold cursor-pointer">Have Account</a>
                     </div> 
                 </form>
     

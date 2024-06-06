@@ -1,6 +1,7 @@
 <?php
 require 'app/init.php';
 
+use App\Controllers\DashboardController;
 use App\Controllers\LoginController;
 use App\Controllers\RegisterController;
 use App\Controllers\RoleController;
@@ -21,6 +22,9 @@ Router::add('GET', $baseurl . 'pengguna-register', RoleController::class, 'pengg
 Router::add('POST', $baseurl . 'pengguna-register', RegisterController::class, 'penggunaRegister');
 Router::add('GET', $baseurl . 'pengguna-login', RoleController::class, 'penggunaLogin');
 Router::add('POST', $baseurl . 'pengguna-login', LoginController::class, 'penggunaLogin');
+Router::add('GET', $baseurl . 'pengguna-dashboard', DashboardController::class, 'penggunaDashboard');
+Router::add('GET', $baseurl . 'chef-dashboard', DashboardController::class, 'chefDashboard');
+Router::add('GET', $baseurl . 'admin-dashboard', DashboardController::class, 'adminDashboard');
 // Router::add('POST', $baseurl . 'tamu-reservasi', TamuController::class, 'reservasi',[MustLoginTamuMiddleware::class]);
 // Router::add('GET', $baseurl . 'tamu-tagihan/([0-9a-zA-Z]*)', TamuController::class, 'setTagihan',[MustLoginTamuMiddleware::class]);
 

@@ -12,6 +12,7 @@ require 'app/models/pendaftaran_kelas.php';
 require 'app/Controllers/LoginController.php';
 require 'app/Controllers/RegisterController.php';
 require 'app/Controllers/RoleController.php';
+require 'app/Controllers/DashboardController.php';
 // require 'app/Middleware/MustLoginMiddleware.php';
 
 ?>
