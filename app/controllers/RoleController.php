@@ -16,6 +16,10 @@ class RoleController
     }
     public function index()
     {
+        View::set('landing');
+    }
+    public function role()
+    {
         View::set('role');
     }
     public function adminRegister()
@@ -39,26 +43,12 @@ class RoleController
         }
         View::set('pengguna/register');
     }
-    public function adminLogin()
+    public function login()
     {
-        if(isset($_COOKIE['rememberme']) && str_contains($_COOKIE['rememberme'],'user-admin')) {
-            View::redirectTo($this->baseurl . 'admin-login');
+        if(isset($_COOKIE['rememberme']) && str_contains($_COOKIE['rememberme'],'id')) {
+            View::redirectTo($this->baseurl . 'login');
         }
-        View::set('admin/login');
-    }
-    public function chefLogin()
-    {
-        if(isset($_COOKIE['rememberme']) && str_contains($_COOKIE['rememberme'],'user-chef')) {
-            View::redirectTo($this->baseurl . 'chef-login');
-        }
-        View::set('chef/login');
-    }
-    public function penggunaLogin()
-    {
-        if(isset($_COOKIE['rememberme']) && str_contains($_COOKIE['rememberme'],'user-pengguna')) {
-            View::redirectTo($this->baseurl . 'pengguna-login');
-        }
-        View::set('pengguna/login');
+        View::set('login');
     }
 }
 

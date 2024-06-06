@@ -24,7 +24,7 @@ class DashboardController
     }
     public function penggunaDashboard()
     {
-        View::set('pengguna/dashboard-pengguna');
+        View::set('pengguna/cooking-class');
     }
 }
 

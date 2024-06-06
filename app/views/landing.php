@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
+<?php $baseurl = '/master-cook/'; ?>
 <body class="font-roboto">
     <!-- navbar start-->
     <header class="sticky inset-0 z-50 border-b border-slate-100 bg-white/80 backdrop-blur-lg">
@@ -27,8 +28,8 @@
             </ul>
             <div class="flex-grow"></div>
             <div class="hidden items-center justify-center gap-10 md:flex">
-                <a href="#" class="rounded-full  px-8 py-2 font-dm text-base font-medium text-white bg-light-logo shadow-md transition-transform duration-200 ease-in-out hover:bg-blue-900">Register</a>
-                <a href="#"
+                <a href="<?=$baseurl . 'role'?>" class="rounded-full  px-8 py-2 font-dm text-base font-medium text-white bg-light-logo shadow-md transition-transform duration-200 ease-in-out hover:bg-blue-900">Register</a>
+                <a href="<?=$baseurl . 'login'?>"
                     class="rounded-full  px-8 py-2 font-dm text-base font-medium text-white bg-light-logo shadow-md transition-transform duration-200 ease-in-out hover:bg-blue-900">
                     Login
                 </a>
@@ -39,7 +40,7 @@
 
     <!-- hero start -->
     <div>
-        <img src="/image/hero1.png" alt="" class="w-full pt-4">
+        <img src="./image/hero1.png" alt="" class="w-full pt-4">
     </div>
 
     <!-- card start -->
@@ -51,7 +52,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pt-8">
                 <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="/image/card1.png" alt="" class="w-full h-64 object-cover">
+                    <img src="./image/card1.png" alt="" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Masak Bareng Chef Arnold</h3>
                         <p class="text-black text-base text-center">Belajar masak dengan berbagai olahan daging sapi yang nikmat</p>
@@ -70,7 +71,7 @@
                 </div>
 
                 <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="/image/card2.png" alt=""
+                    <img src="./image/card2.png" alt=""
                         class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Chef Renata goes to Banyuwangi</h3>
@@ -90,7 +91,7 @@
                 </div>
 
                 <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="/image/card3.png" alt=""
+                    <img src="./image/card3.png" alt=""
                         class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Chef Juna bagi resep rahasia</h3>
@@ -165,7 +166,7 @@
     <section class="py-20 bg-white">
         <div class="grid grid-cols-1 gap-x-6 gap-y-4 px-10">
             <div class="rounded-3xl w-full h-[10rem] flex flex-col justify-center items-center bg-gray-100 text-center relative">
-                <img src="/image/Vector.png" alt="" class="right-0 w-[25%] absolute z-10 h-full">
+                <img src="./image/Vector.png" alt="" class="right-0 w-[25%] absolute z-10 h-full">
                 <h1 class="text-center text-2xl font-semibold text-light-logo">Cooking Master</h1>
             </div>
             <div class="rounded-3xl w-full py-6 bg-gray-100 text-center">

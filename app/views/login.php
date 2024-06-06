@@ -47,7 +47,7 @@
                         </span>
                     </div>
                     <div class="mt-6 text-end">
-                        <a href="<?=$base . 'chef-register'?>" class="text-light-logo text-sm font-semibold cursor-pointer">Create Account</a>
+                        <a href="<?=$base . 'role'?>" class="text-light-logo text-sm font-semibold cursor-pointer">Create Account</a>
                     </div> 
                 </form>   
             </div>

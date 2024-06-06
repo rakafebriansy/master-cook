@@ -59,7 +59,7 @@
                         </span>
                     </div>
                     <div class="mt-6 text-end">
-                        <a href="<?=$base . 'pengguna-login'?>" class="text-light-logo text-sm font-semibold cursor-pointer">Have Account</a>
+                        <a href="<?=$base . 'login'?>" class="text-light-logo text-sm font-semibold cursor-pointer">Have Account</a>
                     </div> 
                 </form>
     

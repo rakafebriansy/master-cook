@@ -25,9 +25,9 @@ class RegisterController
             'password' => $_POST['password'],
             'role' => 'admin',
         ])) {
-            View::redirectWith($this->baseurl . 'admin-login', 'Registrasi berhasil');
+            View::redirectTo($this->baseurl . 'login');
         }
-        View::redirectWith($this->baseurl . 'admin-register', 'Registrasi gagal',true);
+        View::redirectTo($this->baseurl . 'admin-register');
     }
     public function penggunaRegister()
     {
@@ -39,9 +39,9 @@ class RegisterController
             'password' => $_POST['password'],
             'role' => 'pengguna',
         ])) {
-            View::redirectWith($this->baseurl . 'pengguna-login', 'Registrasi berhasil');
+            View::redirectTo($this->baseurl . 'login');
         }
-        View::redirectWith($this->baseurl . 'pengguna-register', 'Registrasi gagal',true);
+        View::redirectTo($this->baseurl . 'pengguna-register');
     }
     public function chefRegister()
     {
@@ -53,9 +53,9 @@ class RegisterController
             'password' => $_POST['password'],
             'role' => 'chef',
         ])) {
-            View::redirectWith($this->baseurl . 'chef-login', 'Registrasi berhasil');
+            View::redirectTo($this->baseurl . 'login');
         }
-        View::redirectWith($this->baseurl . 'chef-register', 'Registrasi gagal',true);
+        View::redirectTo($this->baseurl . 'chef-register');
     }
 }
 
