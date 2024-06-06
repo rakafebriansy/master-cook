@@ -18,6 +18,18 @@ class RoleController
     {
         View::set('role');
     }
+    public function adminRegister()
+    {
+        View::set('admin/register');
+    }
+    public function chefRegister()
+    {
+        View::set('chef/register');
+    }
+    public function penggunaRegister()
+    {
+        View::set('pengguna/register');
+    }
 }
 
 ?>

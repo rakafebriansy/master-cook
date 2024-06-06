@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /master-cook/
+RewriteRule ^index\\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /master-cook/index.php [L]
