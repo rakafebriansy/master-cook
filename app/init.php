@@ -13,6 +13,7 @@ require 'app/Controllers/LoginController.php';
 require 'app/Controllers/RegisterController.php';
 require 'app/Controllers/RoleController.php';
 require 'app/Controllers/DashboardController.php';
+require 'app/Controllers/AkunController.php';
 // require 'app/Middleware/MustLoginMiddleware.php';
 
 ?>

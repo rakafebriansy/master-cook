@@ -11,6 +11,8 @@
 
 </head>
 <body class="font-roboto">
+<?php $baseurl = '/master-cook/' ?>
+
     <!-- navbar start-->
     <header class="sticky inset-0 z-50 border-b border-slate-100 bg-gray-100 backdrop-blur-lg">
         <nav class="mx-auto flex max-w-6xl gap-8 px-6 transition-all duration-200 ease-in-out lg:px-12 py-4">

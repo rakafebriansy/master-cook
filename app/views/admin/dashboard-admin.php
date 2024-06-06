@@ -11,6 +11,7 @@
 
 </head>
 <body class="font-roboto">
+    <?php $baseurl = '/master-cook/' ?>
     <!-- navbar start-->
     <header class="sticky inset-0 z-50 border-b border-slate-100 bg-white/80 backdrop-blur-lg">
         <nav class="mx-auto flex max-w-6xl gap-8 px-6 transition-all duration-200 ease-in-out lg:px-12 py-4">
@@ -19,13 +20,13 @@
             </div>
             <ul class="hidden items-center justify-center gap-6 md:flex">
                 <li class="pt-1.5 font-dm text-sm font-semibold text-slate-900">
-                    <a href="dashboard-admin.html">Dashboard</a>
+                    <a href="#">Dashboard</a>
                 </li>
                 <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="melihat-data-akun.html">Data Akun</a>
+                    <a href="<?=$baseurl . 'admin-data-akun'?>">Data Akun</a>
                 </li>    
                 <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="verify-akun.html">verifikasi Akun</a>
+                    <a href="<?=$baseurl . 'admin-verifikasi-akun'?>">Verifikasi Akun</a>
                 </li>           
             </ul>
             <div class="flex-grow"></div>
@@ -58,12 +59,7 @@
                             <div>
                                 <h1 class="text-xs text-gray-700 font-normal">21 Mei 2024</h1>
                                 <h1 class="text-xs text-gray-700 font-normal">Jember Town Square</h1>
-                            </div>
-                           
-                            <button
-                                class="px-6 py-1 bg-light-logo text-white text-sm font-normal rounded-full hover:bg-blue-900 transition duration-200">
-                                Daftar
-                            </button>                   
+                            </div>                 
                         </div>                      
                     </div>
                 </div>
@@ -79,11 +75,7 @@
                                 <h1 class="text-xs text-gray-700 font-normal">24 Mei 2024</h1>
                                 <h1 class="text-xs text-gray-700 font-normal">Lapangan Blambangan</h1>
                             </div>
-                           
-                            <button
-                                class="px-6 py-1 bg-light-logo text-white text-sm font-normal rounded-full hover:bg-blue-900 transition duration-200">
-                                Daftar
-                            </button>                   
+                                          
                         </div>                      
                     </div>
                 </div>
@@ -99,12 +91,7 @@
                             <div>
                                 <h1 class="text-xs text-gray-700 font-normal">29 Mei 2024</h1>
                                 <h1 class="text-xs text-gray-700 font-normal">Nuansa Cafe</h1>
-                            </div>
-                           
-                            <button
-                                class="px-6 py-1 bg-light-logo text-white text-sm font-normal rounded-full hover:bg-blue-900 transition duration-200">
-                                Daftar
-                            </button>                   
+                            </div>               
                         </div>                      
                     </div>
                 </div>                              
