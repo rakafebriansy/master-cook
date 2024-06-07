@@ -54,15 +54,21 @@
                         </tr>
                     </thead>
                     <tbody class="bg-white">
+                    <?php foreach ($users as $key => $user): ?>
                         <tr>
-                            <td class="py-4 px-6 text-sm font-normal">1</td>
-                            <td class="py-4 px-6 text-sm truncate font-normal">renata moeloek</td>
-                            <td class="py-4 px-6 text-sm font-normal">@renata_11</td>
-                            <td class="py-4 px-6 text-sm font-normal">0823176621888</td>
-                            <td class="py-4 px-6 font-normal">
-                                <span class="bg-light-logo text-white py-1 px-4 rounded-full text-xs">hapus</span>
+                            <td class="py-4 px-6 text-sm font-normal"><?= $key + 1;?></td>
+                            <td class="py-4 px-6 text-sm truncate font-normal"><?= $user['nama'];?></td>
+                            <td class="py-4 px-6 text-sm font-normal"><?= $user['username'];?></td>
+                            <td class="py-4 px-6 text-sm font-normal"><?= $user['no_telp'];?></td>
+                            <td class="py-4 px-6 flex ">
+                                <form action="<?=$baseurl . 'admin-data-chef'?>" method="POST">
+                                    <input type="hidden" name="id_chef" value="<?=$user['id']?>" id="">
+                                    <button type="submit"
+                                    class="bg-light-logo text-white py-1 px-4 rounded-full text-xs">Hapus</button>
+                                </form>
                             </td>
                         </tr>
+                    <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>

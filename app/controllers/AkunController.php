@@ -83,6 +83,22 @@ class AkunController
             }
         View::redirectTo($this->baseurl . 'admin-verifikasi-chef');
     }
+    public function adminHapusPenggunaFromData()
+    {
+        $muser = new User();
+        if($muser->delete($_POST['id_pengguna'])) {
+            View::redirectTo($this->baseurl . 'admin-data-pengguna');
+            }
+        View::redirectTo($this->baseurl . 'admin-data-pengguna');
+    }
+    public function adminHapusChefFromData()
+    {
+        $muser = new User();
+        if($muser->delete($_POST['id_chef'])) {
+            View::redirectTo($this->baseurl . 'admin-data-chef');
+            }
+        View::redirectTo($this->baseurl . 'admin-data-chef');
+    }
 }
 
 ?>

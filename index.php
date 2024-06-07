@@ -23,6 +23,8 @@ Router::add('GET', $baseurl . 'admin-dashboard', DashboardController::class, 'ad
 Router::add('GET', $baseurl . 'admin-data-akun', AkunController::class, 'adminDataAkun');
 Router::add('GET', $baseurl . 'admin-data-pengguna', AkunController::class, 'adminDataPengguna');
 Router::add('GET', $baseurl . 'admin-data-chef', AkunController::class, 'adminDataChef');
+Router::add('POST', $baseurl . 'admin-data-pengguna', AkunController::class, 'adminHapusPenggunaFromData');
+Router::add('POST', $baseurl . 'admin-data-chef', AkunController::class, 'adminHapusChefFromData');
 Router::add('GET', $baseurl . 'admin-verifikasi-akun', AkunController::class, 'adminVerifikasiAkun');
 Router::add('GET', $baseurl . 'admin-verifikasi-pengguna', AkunController::class, 'adminVerifikasiPengguna');
 Router::add('POST', $baseurl . 'admin-verifikasi-pengguna', AkunController::class, 'adminDoVerifikasiPengguna');
