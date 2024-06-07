@@ -47,9 +47,11 @@ Router::add('POST', $baseurl . 'chef-buat-kelas', KelasController::class, 'chefD
 Router::add('GET', $baseurl . 'pengguna-register', RoleController::class, 'penggunaRegister');
 Router::add('POST', $baseurl . 'pengguna-register', RegisterController::class, 'penggunaRegister');
 Router::add('GET', $baseurl . 'pengguna-dashboard', DashboardController::class, 'penggunaDashboard');
-Router::add('GET', $baseurl . 'pengguna-kelas-memasak', KelasController::class, 'penggunaKelasMemasak');
+// Router::add('GET', $baseurl . 'pengguna-kelas-memasak', KelasController::class, 'penggunaKelasMemasak');
 Router::add('GET', $baseurl . 'pengguna-profil', ProfilController::class, 'penggunaProfil');
 Router::add('GET', $baseurl . 'pengguna-edit-profil', ProfilController::class, 'penggunaEditProfil');
+Router::add('GET', $baseurl . 'pengguna-daftar/([0-9a-zA-Z]*)', KelasController::class, 'penggunaDaftar');
+Router::add('POST', $baseurl . 'pengguna-daftar-kelas', KelasController::class, 'penggunaDoDaftar');
 
 Router::add('GET', $baseurl . 'logout', RoleController::class, 'logout');
 Router::add('GET', $baseurl . 'fresh', RoleController::class, 'fresh');

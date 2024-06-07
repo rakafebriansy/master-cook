@@ -119,36 +119,57 @@ class Seeder
             'id_user' => 1,
             'id_kelas_masak' => 1,
             'tanggal_daftar' => date('Y-m-d H:i:s'),
+            'alamat' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+
+            'motivasi' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
         ]);
         $this->db->create('pendaftaran_kelas',[
             'id' => 2,
             'id_user' => 2,
             'id_kelas_masak' => 1,
             'tanggal_daftar' => date('Y-m-d H:i:s'),
+            'alamat' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+
+            'motivasi' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
+
         ]);
         $this->db->create('pendaftaran_kelas',[
             'id' => 3,
             'id_user' => 3,
             'id_kelas_masak' => 1,
             'tanggal_daftar' => date('Y-m-d H:i:s'),
+            'alamat' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+
+            'motivasi' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
+
         ]);
         $this->db->create('pendaftaran_kelas',[
             'id' => 5,
             'id_user' => 5,
             'id_kelas_masak' => 1,
             'tanggal_daftar' => date('Y-m-d H:i:s'),
+            'alamat' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+
+            'motivasi' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
+
         ]);
         $this->db->create('pendaftaran_kelas',[
             'id' => 6,
             'id_user' => 6,
             'id_kelas_masak' => 2,
             'tanggal_daftar' => date('Y-m-d H:i:s'),
+            'alamat' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+            'motivasi' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
+
         ]);
         $this->db->create('pendaftaran_kelas',[
             'id' => 7,
             'id_user' => 7,
             'id_kelas_masak' => 2,
             'tanggal_daftar' => date('Y-m-d H:i:s'),
+            'alamat' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+            'motivasi' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
+
         ]);
         
     }

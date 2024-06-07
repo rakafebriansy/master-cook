@@ -20,11 +20,11 @@
                 <h1 class="justify-center text-3xl font-bold text-light-logo cursor-pointer">MASTER COOK</h1>
             </div>
             <ul class="hidden items-center justify-center gap-6 md:flex">
-                <li class="pt-1.5 font-dm text-sm font-semibold text-slate-900">
+                <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
                     <a href="#">Dashboard</a>
                 </li>
-                <li class="pt-1.5 font-dm text-sm font-normal text-slate-900">
-                    <a href="<?=$baseurl . 'pengguna-kelas-memasak'?>">Kelas Memasak</a>
+                <li class="pt-1.5 font-dm text-sm font-semibold text-slate-900">
+                    <a>Kelas Memasak</a>
                 </li>          
             </ul>
             <div class="flex-grow"></div>
@@ -61,10 +61,10 @@
                             <h1 class="text-xs text-gray-700 font-normal"><?= $kelas_masak['lokasi'];?></h1>
                         </div>
                         
-                        <button
+                        <a href="pengguna-daftar/<?=$kelas_masak['id']?>"
                             class="px-6 py-1 bg-light-logo text-white text-sm font-normal rounded-full hover:bg-blue-900 transition duration-200">
                             Daftar
-                        </button>                   
+                        </a>                   
                     </div>                      
                 </div>
                 <?php endforeach; ?>  
