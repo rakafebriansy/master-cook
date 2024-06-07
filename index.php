@@ -41,6 +41,8 @@ Router::add('GET', $baseurl . 'chef-dashboard', DashboardController::class, 'che
 Router::add('GET', $baseurl . 'chef-kelas-memasak', KelasController::class, 'chefKelasMemasak');
 Router::add('GET', $baseurl . 'chef-profil', ProfilController::class, 'chefProfil');
 Router::add('GET', $baseurl . 'chef-edit-profil', ProfilController::class, 'chefEditProfil');
+Router::add('GET', $baseurl . 'chef-buat-kelas', KelasController::class, 'chefBuatKelas');
+Router::add('POST', $baseurl . 'chef-buat-kelas', KelasController::class, 'chefDoBuatKelas');
 
 Router::add('GET', $baseurl . 'pengguna-register', RoleController::class, 'penggunaRegister');
 Router::add('POST', $baseurl . 'pengguna-register', RegisterController::class, 'penggunaRegister');

@@ -46,14 +46,14 @@
         <div class="container mx-auto">
             <div class="rounded-lg w-full py-12 px-4 bg-white flex justify-between gap-x-6">
                 <h1 class=" text-4xl font-semibold text-gray-800">Kelas Memasakmu</h1>
-                <button class="py-2.5 px-8 rounded-full text-sm font-medium bg-light-logo text-white hover:bg-blue-900">Tambah Kelas</button>
+                <a href="<?= $baseurl . 'chef-buat-kelas'?>" class="py-2.5 px-8 rounded-full text-sm font-medium bg-light-logo text-white hover:bg-blue-900">Tambah Kelas</a>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pt-8">
                 <?php foreach ($kelas_masaks as $kelas_masak): ?>
                 <div class="bg-gray-100 rounded-lg overflow-hidden flex items-center justify-between flex-col">
                     <div class="flex justify-between items-center flex-col min-w-30%">
-                    <img src="./image/card1.png" alt="" class="w-full object-cover mb-4">
+                    <img src="./image/kelas/<?= $kelas_masak['poster'] ?? 'card1.png' ?>" alt="" class="w-full object-cover mb-4">
                     <h3 class="text-lg font-semibold text-light-logo mb-2 text-center"><?= $kelas_masak['judul'];?></h3>
                     <p class="text-black text-base text-center"><?= $kelas_masak['ringkasan'];?></p>
                     </div>
@@ -62,11 +62,7 @@
                             <h1 class="text-xs text-gray-700 font-normal"><?= $kelas_masak['tanggal'];?></h1>
                             <h1 class="text-xs text-gray-700 font-normal"><?= $kelas_masak['lokasi'];?></h1>
                         </div>
-                        
-                        <button
-                            class="px-6 py-1 bg-light-logo text-white text-sm font-normal rounded-full hover:bg-blue-900 transition duration-200">
-                            Daftar
-                        </button>                   
+                                        
                     </div>                      
                 </div>
                 <?php endforeach; ?>  

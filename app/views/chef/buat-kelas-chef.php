@@ -37,30 +37,29 @@
     <!-- navbar end -->
 
     <!--  -->
-    <div class=" bg-white px-2">
-        <div class="flex flex-col space-y-5 mx-10">
+    <form enctype="multipart/form-data" action="<?= $baseurl . 'chef-buat-kelas' ?>" method="POST" class="flex flex-col space-y-5 mx-10">
             <div class=" max-w-full mx-auto rounded-lg overflow-hidden md:max-w-xl">
                 <div class="flex w-full justify-center p-3">
                     <div class="relative border-dotted h-48 rounded-lg shadow-inner bg-gray-100 flex justify-center items-center">    
                         <div class="absolute">                  
-                        <div class="flex flex-col items-center">
-                            <i class="fa fa-folder-open fa-4x text-blue-700"></i>
-                        <span class="block text-gray-400 font-normal">Upload cover</span>
-                        </div>
+                            <div class="flex flex-col items-center">
+                                <i class="fa fa-folder-open fa-4x text-blue-700"></i>
+                            <span id="poster" class="block text-gray-400 font-normal">Upload cover</span>
+                            </div>
                         </div>   
-                        <input required="" type="file" class="h-full w-full opacity-0" name="">   
+                        <input onchange="posterLabel(this)" required="" type="file" class="h-full w-full opacity-0" name="poster">   
                     </div>
                 </div>
             </div>
 
-        <form class="bg-white p-4 rounded-lg">
+        <div class="bg-white p-4 rounded-lg">
             <div class="mb-4 border border-black py-4 rounded-md px-6">
                 <label class="block text-black text-xl font-semibold mb-2">
                     Judul
                 </label>
                 <input required=""
                     class=" rounded-xl w-full py-2 px-3 text-gray-900 font-normal bg-transparent outline-none"
-                    id="nama" type="text" placeholder="input required=""an">
+                    name="judul" type="text">
             </div>
             
             <div class="mb-4 border border-black py-4 rounded-md px-6">
@@ -69,7 +68,7 @@
                 </label>
                 <textarea
                     class="rounded-xl w-full py-2 px-3 text-gray-900 font-normal bg-transparent outline-none"
-                    id="" rows="4" placeholder=""></textarea>
+                    name="ringkasan" rows="4" placeholder=""></textarea>
             </div>
 
             <div class="mb-4 border border-black py-4 rounded-md px-6">
@@ -78,34 +77,34 @@
                 </label>
                 <textarea
                     class="rounded-xl w-full py-2 px-3 text-gray-900 font-normal bg-transparent outline-none"
-                    id="" rows="6" placeholder=""></textarea>
+                    name="syarat_dan_ketentuan" rows="6" placeholder=""></textarea>
             </div>
 
             <div class="flex items-center mb-5 border border-black py-2 px-6">
                 <label class="w-20 inline-block text-right  text-black">Pukul : </label>
-                <input required="" type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
+                <input name="pukul" required="" type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
             </div>
 
             <div class="flex items-center mb-5 border border-black py-2 px-6">
                 <label class="w-20 inline-block text-right  text-black">Tanggal : </label>
-                <input required="" type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
+                <input name="tanggal" required="" type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
             </div>
 
             <div class="flex items-center mb-5 border border-black py-2 px-6">
                 <label class="w-20 inline-block text-right  text-black">Lokasi :  </label>
-                <input required="" type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
+                <input name="lokasi" required="" type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
             </div>
 
             <div class="flex items-center mb-5 border border-black py-2 px-6">
                 <label class="w-20 inline-block text-right  text-black">Harga : </label>
-                <input required="" type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
+                <input name="harga" required="" type="text" class=" flex-1 py-2 placeholder-gray-300 outline-none ">
             </div>
 
             <button class=" py-3 px-4 flex w-full justify-center bg-light-logo hover:bg-blue-900 text-white text-xl font-semibold shadow-md rounded-xl"
                 type="submit">Selesai
             </button>           
-        </form>       
-    </div>
+        </div>       
+    </form>
 
     <!-- Footer start-->
     <section class="py-20 bg-white">
@@ -149,9 +148,6 @@
             </div>          
         </div>
     </section>
-
-
-
-
+    <script src="../master-cook/public/dist/script.js"></script>
 </body>
 </html>

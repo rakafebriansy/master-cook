@@ -53,7 +53,7 @@
             <?php foreach ($kelas_masaks as $kelas_masak): ?>
                 <div class="bg-gray-100 rounded-lg overflow-hidden flex items-center justify-between flex-col">
                     <div class="flex justify-between items-center flex-col min-w-30%">
-                    <img src="./image/card1.png" alt="" class="w-full object-cover mb-4">
+                    <img src="./image/kelas/<?= $kelas_masak['poster'] ?? 'card1.png' ?>" alt="" class="w-full object-cover mb-4">
                     <h3 class="text-lg font-semibold text-light-logo mb-2 text-center"><?= $kelas_masak['judul'];?></h3>
                     <p class="text-black text-base text-center"><?= $kelas_masak['ringkasan'];?></p>
                     </div>

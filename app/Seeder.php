@@ -93,7 +93,7 @@ class Seeder
             2. Peserta diharapkan mengenakan pakaian yang nyaman dan sepatu tertutup untuk keamanan. 
             3. Semua peralatan dan bahan memasak akan disediakan. Peserta tidak perlu membawa peralatan pribadi.
             ',
-            'poster' => '1.png',
+            'poster' => 'card1.png',
             'pukul' => '13:50 - 16:10 WIB',
             'tanggal' => '21 Mei 2024',
             'lokasi' => 'Jember Town Square',
@@ -105,7 +105,7 @@ class Seeder
             'judul' => 'Menu Sehat ala Chef Juna',
             'ringkasan' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus.',
             'syarat_dan_ketentuan' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere sint optio illum. Assumenda distinctio explicabo fugit cupiditate quo laudantium ad saepe corrupti nihil tempora ipsum, natus, soluta consequatur nam.',
-            'poster' => '2.png',
+            'poster' => 'card2.png',
             'pukul' => '15:50 - 17:10 WIB',
             'tanggal' => '22 Mei 2024',
             'lokasi' => 'Jember Town Square',
