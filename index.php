@@ -50,6 +50,7 @@ Router::add('GET', $baseurl . 'pengguna-profil', ProfilController::class, 'pengg
 Router::add('GET', $baseurl . 'pengguna-edit-profil', ProfilController::class, 'penggunaEditProfil');
 
 Router::add('GET', $baseurl . 'logout', RoleController::class, 'logout');
+Router::add('GET', $baseurl . 'fresh', RoleController::class, 'fresh');
 // Router::add('POST', $baseurl . 'tamu-reservasi', TamuController::class, 'reservasi',[MustLoginTamuMiddleware::class]);
 // Router::add('GET', $baseurl . 'tamu-tagihan/([0-9a-zA-Z]*)', TamuController::class, 'setTagihan',[MustLoginTamuMiddleware::class]);
 

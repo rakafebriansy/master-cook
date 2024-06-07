@@ -109,13 +109,20 @@
         <canvas id="myChart"></canvas>
 
         <script>
+            var datas = <?=$chart_kelas_masak?>;
+            let jumlahs = datas.map((data) => {
+                return data['jumlah'];
+            });
+            let juduls = datas.map((data) => {
+                return data['judul'];
+            });
             var ctx = document.getElementById('myChart').getContext('2d');
             var myChart = new Chart(ctx, {
                 type: 'pie',
                 data: {
-                    labels: ['Red', 'Blue', 'Yellow'],
+                    labels: juduls,
                     datasets: [{
-                        data: [30, 40, 20],
+                        data: jumlahs,
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.7)',
                             'rgba(54, 162, 235, 0.7)',

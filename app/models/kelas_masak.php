@@ -30,6 +30,12 @@ class KelasMasak
     {
         return $this->db->readMany($this->table);
     }
+    public function getChart()
+    {
+        $sql = "SELECT COUNT(u.id) AS jumlah, km.judul FROM pendaftaran_kelas pk JOIN user u ON (u.id = pk.id_user) JOIN kelas_masak km ON (km.id = pk.id_kelas_masak) GROUP BY pk.id_kelas_masak ORDER BY jumlah DESC LIMIT 5;";
+        $jumlah = $this->db->executeNoBind($sql,true);
+        return $jumlah;
+    }
 }
 
 ?>

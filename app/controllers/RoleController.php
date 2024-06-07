@@ -3,6 +3,8 @@
 namespace App\Controllers;
 use App\Core\View;
 use App\Database;
+use App\Models\KelasMasak;
+use App\Seeder;
 
 class RoleController
 {
@@ -16,7 +18,13 @@ class RoleController
     }
     public function index()
     {
-        View::set('landing');
+        $mkelas_masak = new KelasMasak();
+        $kelas_masaks = $mkelas_masak->all();
+        $chart_kelas_masak= $mkelas_masak->getChart();
+        View::set('landing',[
+            'kelas_masaks' => $kelas_masaks,
+            'chart_kelas_masak' => json_encode($chart_kelas_masak)
+        ]);
     }
     public function role()
     {
@@ -54,6 +62,15 @@ class RoleController
     {
         session_destroy();
         View::redirectTo($this->baseurl);
+    }
+    public function fresh()
+    {
+        $seeder = new Seeder($this->db);
+        if($seeder->fresh()) {
+            echo 'FRESH';exit;
+            }
+        echo 'NOT FRESH';exit;
+
     }
 }
 

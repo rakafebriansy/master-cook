@@ -25,7 +25,8 @@ class Seeder
             'nama' =>  'Elvy Yunia',
             'no_telp' => '085649554149',
             'password' => 'Mas@kY0k!',
-            'role' => 'pengguna'
+            'role' => 'pengguna',
+            'status' => 1
         ]);
         $this->db->create('user',[
             'id' => 2,
@@ -33,7 +34,8 @@ class Seeder
             'nama' =>  'Pengguna',
             'no_telp' => '085649554141',
             'password' => '123',
-            'role' => 'pengguna'
+            'role' => 'pengguna',
+            'status' => 1
         ]);
         $this->db->create('user',[
             'id' => 3,
@@ -41,7 +43,8 @@ class Seeder
             'nama' =>  'Admin',
             'no_telp' => '085649554142',
             'password' => '123',
-            'role' => 'admin'
+            'role' => 'admin',
+            'status' => 1
         ]);
         $this->db->create('user',[
             'id' => 4,
@@ -49,7 +52,35 @@ class Seeder
             'nama' =>  'Chef',
             'no_telp' => '085649554143',
             'password' => '123',
-            'role' => 'chef'
+            'role' => 'chef',
+            'status' => 1
+        ]);
+        $this->db->create('user',[
+            'id' => 5,
+            'username' => 'jerry',
+            'nama' =>  'Jerry Sainfeld',
+            'no_telp' => '085619554141',
+            'password' => '123',
+            'role' => 'pengguna',
+            'status' => 1
+        ]);
+        $this->db->create('user',[
+            'id' => 6,
+            'username' => 'koha',
+            'nama' =>  'Kohaku Sino',
+            'no_telp' => '085619554221',
+            'password' => '123',
+            'role' => 'pengguna',
+            'status' => 1
+        ]);
+        $this->db->create('user',[
+            'id' => 7,
+            'username' => 'jiro',
+            'nama' =>  'Jiro Shirogane',
+            'no_telp' => '085655554221',
+            'password' => '123',
+            'role' => 'pengguna',
+            'status' => 1
         ]);
         
         //KELAS_MASAK
@@ -81,12 +112,55 @@ class Seeder
             'harga' => 200000,
             'id_user' => 4
         ]);
+
+        //PENDAFTARAN_KELAS
+        $this->db->create('pendaftaran_kelas',[
+            'id' => 1,
+            'id_user' => 1,
+            'id_kelas_masak' => 1,
+            'tanggal_daftar' => date('Y-m-d H:i:s'),
+        ]);
+        $this->db->create('pendaftaran_kelas',[
+            'id' => 2,
+            'id_user' => 2,
+            'id_kelas_masak' => 1,
+            'tanggal_daftar' => date('Y-m-d H:i:s'),
+        ]);
+        $this->db->create('pendaftaran_kelas',[
+            'id' => 3,
+            'id_user' => 3,
+            'id_kelas_masak' => 1,
+            'tanggal_daftar' => date('Y-m-d H:i:s'),
+        ]);
+        $this->db->create('pendaftaran_kelas',[
+            'id' => 5,
+            'id_user' => 5,
+            'id_kelas_masak' => 1,
+            'tanggal_daftar' => date('Y-m-d H:i:s'),
+        ]);
+        $this->db->create('pendaftaran_kelas',[
+            'id' => 6,
+            'id_user' => 6,
+            'id_kelas_masak' => 2,
+            'tanggal_daftar' => date('Y-m-d H:i:s'),
+        ]);
+        $this->db->create('pendaftaran_kelas',[
+            'id' => 7,
+            'id_user' => 7,
+            'id_kelas_masak' => 2,
+            'tanggal_daftar' => date('Y-m-d H:i:s'),
+        ]);
         
     }
     public function fresh()
     {
-        $this->clear();
-        $this->new();
+        try {
+            $this->clear();
+            $this->new();
+            return true;
+        } catch (\PDOException $e) {
+            throw $e;
+        }
     }
 }
 
