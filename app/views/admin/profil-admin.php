@@ -52,7 +52,7 @@
                         Nama 
                     </dt>
                     <dd class="mt-1 text-sm text-black sm:mt-0 sm:col-span-2">
-                        Elvy Yunia
+                        <?= $user['nama'];?>
                     </dd>
                 </div>
                 <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -60,7 +60,7 @@
                         Username
                     </dt>
                     <dd class="mt-1 text-sm text-black sm:mt-0 sm:col-span-2">
-                        @pacar_minggyu
+                    <?= $user['username'];?>
                     </dd>
                 </div>
                 <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -68,7 +68,7 @@
                         No Telepon
                     </dt>
                     <dd class="mt-1 text-sm text-black sm:mt-0 sm:col-span-2">
-                        085649554149
+                    <?= $user['no_telp'];?>
                     </dd>
                 </div>
                 <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -76,7 +76,7 @@
                         Password
                     </dt>
                     <dd class="mt-1 text-sm text-black sm:mt-0 sm:col-span-2">
-                        Mas@kY0k!
+                    <?= $user['password'];?>
                     </dd>
                 </div>
                 <div class="py-3 px-2 flex justify-end">

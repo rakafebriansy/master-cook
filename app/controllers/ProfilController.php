@@ -3,6 +3,7 @@
 namespace App\Controllers;
 use App\Core\View;
 use App\Database;
+use App\Models\User;
 class ProfilController
 {
     private $baseurl = '/master-cook/'; 
@@ -15,27 +16,39 @@ class ProfilController
     }
     public function adminProfil()
     {
-        View::set('admin/profil-admin');
+        $muser = new User();
+        $user = $muser->find($_SESSION['id']);
+        View::set('admin/profil-admin',['user' => $user]);
     }
     public function adminEditProfil()
     {
-        View::set('admin/ubah-profil-admin');
+        $muser = new User();
+        $user = $muser->find($_SESSION['id']);
+        View::set('admin/ubah-profil-admin',['user' => $user]);
     }
     public function chefProfil()
     {
-        View::set('chef/profil-chef');
+        $muser = new User();
+        $user = $muser->find($_SESSION['id']);
+        View::set('chef/profil-chef',['user' => $user]);
     }
     public function chefEditProfil()
     {
-        View::set('chef/ubah-profil-chef');
+        $muser = new User();
+        $user = $muser->find($_SESSION['id']);
+        View::set('chef/ubah-profil-chef',['user' => $user]);
     }
     public function penggunaProfil()
     {
-        View::set('pengguna/profil-pengguna');
+        $muser = new User();
+        $user = $muser->find($_SESSION['id']);
+        View::set('pengguna/profil-pengguna',['user' => $user]);
     }
     public function penggunaEditProfil()
     {
-        View::set('pengguna/ubah-profil-pengguna');
+        $muser = new User();
+        $user = $muser->find($_SESSION['id']);
+        View::set('pengguna/ubah-profil-pengguna',['user' => $user]);
     }
 }
 
