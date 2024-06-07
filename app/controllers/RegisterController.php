@@ -24,6 +24,7 @@ class RegisterController
             'no_telp' => $_POST['telp'],
             'password' => $_POST['password'],
             'role' => 'admin',
+            'status' => 1
         ])) {
             View::redirectTo($this->baseurl . 'login');
         }
@@ -38,6 +39,7 @@ class RegisterController
             'no_telp' => $_POST['telp'],
             'password' => $_POST['password'],
             'role' => 'pengguna',
+            'status' => 0
         ])) {
             View::redirectTo($this->baseurl . 'login');
         }
@@ -52,6 +54,7 @@ class RegisterController
             'no_telp' => $_POST['telp'],
             'password' => $_POST['password'],
             'role' => 'chef',
+            'status' => 0
         ])) {
             View::redirectTo($this->baseurl . 'login');
         }

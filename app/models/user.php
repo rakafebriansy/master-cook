@@ -26,9 +26,18 @@ class User
     {
         return $this->db->readOne($this->table,[$column,'=',$value]);
     }
-    public function all()
+    public function all($role = null)
     {
+        if(isset($role)) {
+            $sql = "SELECT * FROM user WHERE role = '$role' AND status = 1;";
+            return $this->db->executeNoBind($sql,true);
+        }
         return $this->db->readMany($this->table);
+    }
+    public function findNotVerified($role)
+    {
+        $sql = "SELECT * FROM user WHERE role = '$role' AND status = 0;";
+        return $this->db->executeNoBind($sql,true);
     }
 }
 

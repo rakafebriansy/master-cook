@@ -25,7 +25,11 @@ Router::add('GET', $baseurl . 'admin-data-pengguna', AkunController::class, 'adm
 Router::add('GET', $baseurl . 'admin-data-chef', AkunController::class, 'adminDataChef');
 Router::add('GET', $baseurl . 'admin-verifikasi-akun', AkunController::class, 'adminVerifikasiAkun');
 Router::add('GET', $baseurl . 'admin-verifikasi-pengguna', AkunController::class, 'adminVerifikasiPengguna');
+Router::add('POST', $baseurl . 'admin-verifikasi-pengguna', AkunController::class, 'adminDoVerifikasiPengguna');
+Router::add('POST', $baseurl . 'admin-delete-verifikasi-pengguna', AkunController::class, 'adminHapusPenggunaFromVerifikasi');
 Router::add('GET', $baseurl . 'admin-verifikasi-chef', AkunController::class, 'adminVerifikasiChef');
+Router::add('POST', $baseurl . 'admin-verifikasi-chef', AkunController::class, 'adminDoVerifikasiChef');
+Router::add('POST', $baseurl . 'admin-delete-verifikasi-chef', AkunController::class, 'adminHapusChefFromVerifikasi');
 Router::add('GET', $baseurl . 'admin-profil', ProfilController::class, 'adminProfil');
 Router::add('GET', $baseurl . 'admin-edit-profil', ProfilController::class, 'adminEditProfil');
 

@@ -20,13 +20,16 @@ class LoginController
         $muser = new User();
         $user = $muser->find($_POST['username'],'username');
         if($user && $user['password'] == $_POST['password']) {
+            if($user['role'] != 'admin' && $user['status'] == 0) {
+                View::redirectTo($this->baseurl . 'login');
+            }
             $_SESSION['id'] = $user['id'];
             // if(isset($_POST['rememberme'])) {
             //     setcookie('rememberme','tamu',time() + 86400);
             // }
             View::redirectTo($this->baseurl . $user['role'] . '-dashboard');
         }
-        View::redirectTo($this->baseurl . 'admin-login');
+        View::redirectTo($this->baseurl . 'login');
     }
 }
 
