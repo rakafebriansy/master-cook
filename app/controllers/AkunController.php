@@ -96,7 +96,7 @@ class AkunController
         $muser = new User();
         if($muser->delete($_POST['id_chef'])) {
             View::redirectTo($this->baseurl . 'admin-data-chef');
-            }
+        }
         View::redirectTo($this->baseurl . 'admin-data-chef');
     }
 }

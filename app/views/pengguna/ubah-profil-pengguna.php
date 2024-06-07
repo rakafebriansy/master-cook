@@ -77,10 +77,10 @@
                     </dd>
                 </div>
                 <div class="py-3 px-2 flex justify-end">
-                    <button type="button"
+                <button type="submit"
                         class="mr-3 text-sm bg-light-logo hover:bg-blue-900 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline">Simpan</button>
-                    <button type="button"
-                        class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline ">Batal</button>
+                    <a href="<?=$baseurl . 'pengguna-profil'?>"
+                        class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline ">Batal</a>
                 </div>
             </div>
         </div>

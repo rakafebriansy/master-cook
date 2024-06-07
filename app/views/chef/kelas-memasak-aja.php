@@ -50,96 +50,26 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pt-8">
-                <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="./image/card1.png" alt="" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Masak Olahan Daging Bareng Chef Arnold</h3>
-                        <p class="text-black text-base text-center">Belajar masak dengan berbagai olahan daging sapi yang nikmat</p>
-                        <div class="mt-4 flex items-center justify-between">
-                            <div>
-                                <h1 class="text-xs text-gray-700 font-normal">21 Mei 2024</h1>
-                                <h1 class="text-xs text-gray-700 font-normal">Jember Town Square</h1>
-                            </div>              
-                        </div>                      
+                <?php foreach ($kelas_masaks as $kelas_masak): ?>
+                <div class="bg-gray-100 rounded-lg overflow-hidden flex items-center justify-between flex-col">
+                    <div class="flex justify-between items-center flex-col min-w-30%">
+                    <img src="./image/card1.png" alt="" class="w-full object-cover mb-4">
+                    <h3 class="text-lg font-semibold text-light-logo mb-2 text-center"><?= $kelas_masak['judul'];?></h3>
+                    <p class="text-black text-base text-center"><?= $kelas_masak['ringkasan'];?></p>
                     </div>
+                    <div class="mt-4 w-full flex items-center justify-between">
+                        <div>
+                            <h1 class="text-xs text-gray-700 font-normal"><?= $kelas_masak['tanggal'];?></h1>
+                            <h1 class="text-xs text-gray-700 font-normal"><?= $kelas_masak['lokasi'];?></h1>
+                        </div>
+                        
+                        <button
+                            class="px-6 py-1 bg-light-logo text-white text-sm font-normal rounded-full hover:bg-blue-900 transition duration-200">
+                            Daftar
+                        </button>                   
+                    </div>                      
                 </div>
-
-                <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="./image/card1.png" alt=""
-                        class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Menu Sehat ala Chef Arnold</h3>
-                        <p class="text-black text-base text-center">Masak bersama Chef Arnold dengan olahan menu sehat kreatif</p>
-                        <div class="mt-4 flex items-center justify-between">
-                            <div>
-                                <h1 class="text-xs text-gray-700 font-normal">24 Mei 2024</h1>
-                                <h1 class="text-xs text-gray-700 font-normal">Lapangan Blambangan</h1>
-                            </div>                  
-                        </div>                      
-                    </div>
-                </div>
-                
-
-                <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="./image/card1.png" alt=""
-                        class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Chef Arnold bagi Resep Rahasia?!</h3>
-                        <p class="text-black text-base text-center">Belajar resep rahasia menu andalan bintang 5 Chef Arnold</p>
-                        <div class="mt-4 flex items-center justify-between">
-                            <div>
-                                <h1 class="text-xs text-gray-700 font-normal">29 Mei 2024</h1>
-                                <h1 class="text-xs text-gray-700 font-normal">Nuansa Cafe</h1>
-                            </div>                  
-                        </div>                      
-                    </div>
-                </div> 
-                
-                <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="./image/card1.png" alt="" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Masak Olahan Daging Bareng Chef Arnold</h3>
-                        <p class="text-black text-base text-center">Belajar masak dengan berbagai olahan daging sapi yang nikmat</p>
-                        <div class="mt-4 flex items-center justify-between">
-                            <div>
-                                <h1 class="text-xs text-gray-700 font-normal">21 Mei 2024</h1>
-                                <h1 class="text-xs text-gray-700 font-normal">Jember Town Square</h1>
-                            </div>              
-                        </div>                      
-                    </div>
-                </div>
-
-                <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="./image/card1.png" alt=""
-                        class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Menu Sehat ala Chef Arnold</h3>
-                        <p class="text-black text-base text-center">Masak bersama Chef Arnold dengan olahan menu sehat kreatif</p>
-                        <div class="mt-4 flex items-center justify-between">
-                            <div>
-                                <h1 class="text-xs text-gray-700 font-normal">24 Mei 2024</h1>
-                                <h1 class="text-xs text-gray-700 font-normal">Lapangan Blambangan</h1>
-                            </div>                  
-                        </div>                      
-                    </div>
-                </div>
-                
-
-                <div class="bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="./image/card1.png" alt=""
-                        class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-light-logo mb-2 text-center">Chef Arnold bagi Resep Rahasia?!</h3>
-                        <p class="text-black text-base text-center">Belajar resep rahasia menu andalan bintang 5 Chef Arnold</p>
-                        <div class="mt-4 flex items-center justify-between">
-                            <div>
-                                <h1 class="text-xs text-gray-700 font-normal">29 Mei 2024</h1>
-                                <h1 class="text-xs text-gray-700 font-normal">Nuansa Cafe</h1>
-                            </div>                  
-                        </div>                      
-                    </div>
-                </div>
-
+                <?php endforeach; ?>  
             </div>
         </div>
     </section>
