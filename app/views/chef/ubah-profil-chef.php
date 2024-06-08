@@ -42,47 +42,41 @@
     </div>
 
     <div class="flex space-x-4 justify-center ">
-        <div class="bg-white overflow-hidden shadow rounded-lg ">           
-            <div class=" px-4 py-5 sm:p-0">
-                <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-sm font-medium text-black">
-                        Nama 
-                    </dt>
-                    <dd class="mt-1 text-sm text-black sm:mt-0 sm:col-span-2">
-                    <?= $user['nama'];?>
-                    </dd>
+        <div class="bg-white overflow-hidden shadow rounded-lg">           
+            <form action="<?=$baseurl . 'chef-edit-profil'?>" method="POST" class="px-4 py-2">
+                <div class="justify-between items-center flex">
+                    <label class="block text-sm font-normal leading-5  text-black">Nama</label>
+                    <div class="mt-1 relative rounded-md">
+                        <input id="nama" name="nama" type="text" value="<?=$user['nama']?>" class="appearance-none block w-full px-3 py-2 rounded-md placeholder-gray-400 focus:outline-none transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                    </div>
                 </div>
-                <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-sm font-medium text-black">
-                        Username
-                    </dt>
-                    <dd class="mt-1 text-sm text-black sm:mt-0 sm:col-span-2">
-                    <?= $user['username'];?>
-                    </dd>
+                <div class="justify-between mt-5 items-center flex">
+                    <label class="block text-sm font-normal leading-5  text-black">Username</label>
+                    <div class="mt-1 relative rounded-md">
+                        <input id="username" name="username" value="<?=$user['username']?>" type="text" class="appearance-none block w-full px-3 py-2 rounded-md placeholder-gray-400 focus:outline-none transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                    </div>
                 </div>
-                <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-sm font-normal text-black">
-                        No Telepon
-                    </dt>
-                    <dd class="mt-1 text-sm text-black sm:mt-0 sm:col-span-2">
-                    <?= $user['no_telp'];?>
-                    </dd>
+
+                <div class="justify-between mt-5 items-center flex">
+                    <label class="block text-sm font-normal leading-5  text-black">No Telepon</label>
+                    <div class="mt-1 relative rounded-md">
+                        <input id="telp" name="telp" type="number" value="<?=$user['no_telp']?>" class="appearance-none block w-full px-3 py-2 rounded-md placeholder-gray-400 focus:outline-none transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                    </div>
                 </div>
-                <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-sm font-normal text-black">
-                        Password
-                    </dt>
-                    <dd class="mt-1 text-sm text-black sm:mt-0 sm:col-span-2">
-                    <?= $user['password'];?>
-                    </dd>
-                </div>
+
+                <div class="justify-between mt-5 items-center flex">
+                    <label class="block text-sm font-normal leading-5  text-black">Password</label>
+                    <div class="mt-1 relative rounded-md">
+                        <input id="text" name="password" value="<?=$user['password']?>" type="text" class="appearance-none block w-full px-3 py-2 rounded-md placeholder-gray-400 focus:outline-none transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                    </div>
+                </div> 
                 <div class="py-3 px-2 flex justify-end">
                     <button type="submit"
                         class="mr-3 text-sm bg-light-logo hover:bg-blue-900 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline">Simpan</button>
-                    <a href="<?=$baseurl . 'pengguna-profil'?>"
+                    <a href="<?=$baseurl . 'chef-profil'?>"
                         class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-4 rounded-full focus:outline-none focus:shadow-outline ">Batal</a>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
         

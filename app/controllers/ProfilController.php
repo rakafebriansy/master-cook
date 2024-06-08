@@ -26,6 +26,19 @@ class ProfilController
         $user = $muser->find($_SESSION['id']);
         View::set('admin/ubah-profil-admin',['user' => $user]);
     }
+    public function adminDoEditProfil()
+    {
+        $muser = new User();
+        if($muser->update([
+            'nama' => $_POST['nama'],
+            'username' => $_POST['username'],
+            'no_telp' => $_POST['telp'],
+            'password' => $_POST['password'],
+        ],$_SESSION['id'])) {
+            View::redirectTo($this->baseurl . 'admin-profil');
+        }
+        View::redirectTo($this->baseurl . 'admin-edit-profil');
+    }
     public function chefProfil()
     {
         $muser = new User();
@@ -38,6 +51,19 @@ class ProfilController
         $user = $muser->find($_SESSION['id']);
         View::set('chef/ubah-profil-chef',['user' => $user]);
     }
+    public function chefDoEditProfil()
+    {
+        $muser = new User();
+        if($muser->update([
+            'nama' => $_POST['nama'],
+            'username' => $_POST['username'],
+            'no_telp' => $_POST['telp'],
+            'password' => $_POST['password'],
+        ],$_SESSION['id'])) {
+            View::redirectTo($this->baseurl . 'chef-profil');
+        }
+        View::redirectTo($this->baseurl . 'chef-edit-profil');
+    }
     public function penggunaProfil()
     {
         $muser = new User();
@@ -49,6 +75,19 @@ class ProfilController
         $muser = new User();
         $user = $muser->find($_SESSION['id']);
         View::set('pengguna/ubah-profil-pengguna',['user' => $user]);
+    }
+    public function penggunaDoEditProfil()
+    {
+        $muser = new User();
+        if($muser->update([
+            'nama' => $_POST['nama'],
+            'username' => $_POST['username'],
+            'no_telp' => $_POST['telp'],
+            'password' => $_POST['password'],
+        ],$_SESSION['id'])) {
+            View::redirectTo($this->baseurl . 'pengguna-profil');
+        }
+        View::redirectTo($this->baseurl . 'pengguna-edit-profil');
     }
 }
 

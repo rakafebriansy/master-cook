@@ -49,7 +49,7 @@
         <div class="flex flex-col space-y-5 mx-10">
 
             <button class=" py-4 px-4 flex w-full justify-center bg-slate-400  text-white text-2xl font-normal shadow-md rounded-xl"
-                type="button">Pendaftar
+                disabled type="button">Pendaftar
             </button> 
 
             <div class="border border-black rounded-lg bg-white">

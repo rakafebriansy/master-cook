@@ -34,6 +34,7 @@ Router::add('POST', $baseurl . 'admin-verifikasi-chef', AkunController::class, '
 Router::add('POST', $baseurl . 'admin-delete-verifikasi-chef', AkunController::class, 'adminHapusChefFromVerifikasi');
 Router::add('GET', $baseurl . 'admin-profil', ProfilController::class, 'adminProfil');
 Router::add('GET', $baseurl . 'admin-edit-profil', ProfilController::class, 'adminEditProfil');
+Router::add('POST', $baseurl . 'admin-edit-profil', ProfilController::class, 'adminDoEditProfil');
 
 Router::add('GET', $baseurl . 'chef-register', RoleController::class, 'chefRegister');
 Router::add('POST', $baseurl . 'chef-register', RegisterController::class, 'chefRegister');
@@ -41,6 +42,7 @@ Router::add('GET', $baseurl . 'chef-dashboard', DashboardController::class, 'che
 Router::add('GET', $baseurl . 'chef-kelas-memasak', KelasController::class, 'chefKelasMemasak');
 Router::add('GET', $baseurl . 'chef-profil', ProfilController::class, 'chefProfil');
 Router::add('GET', $baseurl . 'chef-edit-profil', ProfilController::class, 'chefEditProfil');
+Router::add('POST', $baseurl . 'chef-edit-profil', ProfilController::class, 'chefDoEditProfil');
 Router::add('GET', $baseurl . 'chef-buat-kelas', KelasController::class, 'chefBuatKelas');
 Router::add('POST', $baseurl . 'chef-buat-kelas', KelasController::class, 'chefDoBuatKelas');
 Router::add('GET', $baseurl . 'chef-lihat-kelas/([0-9a-zA-Z]*)', KelasController::class, 'chefLihatKelas');
@@ -54,6 +56,7 @@ Router::add('GET', $baseurl . 'pengguna-dashboard', KelasController::class, 'pen
 // Router::add('GET', $baseurl . 'pengguna-kelas-memasak', KelasController::class, 'penggunaKelasMemasak');
 Router::add('GET', $baseurl . 'pengguna-profil', ProfilController::class, 'penggunaProfil');
 Router::add('GET', $baseurl . 'pengguna-edit-profil', ProfilController::class, 'penggunaEditProfil');
+Router::add('POST', $baseurl . 'pengguna-edit-profil', ProfilController::class, 'penggunaDoEditProfil');
 Router::add('GET', $baseurl . 'pengguna-daftar/([0-9a-zA-Z]*)', KelasController::class, 'penggunaDaftar');
 Router::add('POST', $baseurl . 'pengguna-daftar-kelas', KelasController::class, 'penggunaDoDaftar');
 Router::add('GET', $baseurl . 'pengguna-lihat-kelas/([0-9a-zA-Z]*)', KelasController::class, 'penggunaLihatKelas');

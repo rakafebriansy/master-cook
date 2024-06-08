@@ -29,9 +29,9 @@
                          
             </ul>
             <div class="flex-grow"></div>
-            <div class="hidden items-center justify-center gap-10 md:flex">
+            <a href="<?=$baseurl . 'chef-profil'?>" class="hidden items-center justify-center gap-10 md:flex">
                 <img src="../image/user1.svg" alt="" class="w-full h-[50%]">
-            </div>
+            </a>
         </nav>
     </header>
     <!-- navbar end -->

@@ -65,7 +65,7 @@ class KelasController
         $muser = new User();
         $user = $muser->find($_SESSION['id']);
         $pendaftars = $this->db->executeNoBind('SELECT * FROM user JOIN pendaftaran_kelas ON user.id = pendaftaran_kelas.id_user WHERE pendaftaran_kelas.id_kelas_masak =' . $id,true);
-        View::set('chef/lihat-kelas-chef-summary',[
+        View::set('chef/lihat-kelas-chef',[
             'kelas_masak' => $kelas_masak,
             'user' => $user,
             'pendaftars' => $pendaftars,
@@ -77,7 +77,7 @@ class KelasController
         $kelas_masak = $mkelas_masak->find($id);
         $muser = new User();
         $user = $muser->find($_SESSION['id']);
-        View::set('chef/ubah-kelas-chef',[
+        View::set('chef/lihat-kelas-chef-summary',[
             'kelas_masak' => $kelas_masak,
             'user' => $user
         ]);
