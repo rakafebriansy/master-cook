@@ -35,16 +35,6 @@ class DashboardController
             'chart_kelas_masak' => json_encode($chart_kelas_masak)
         ]);
     }
-    public function penggunaDashboard()
-    {
-        $mkelas_masak = new KelasMasak();
-        $kelas_masaks = $mkelas_masak->all();
-        $chart_kelas_masak= $mkelas_masak->getChart();
-        View::set('pengguna/cooking-class',[
-            'kelas_masaks' => $kelas_masaks,
-            'chart_kelas_masak' => json_encode($chart_kelas_masak)
-        ]);
-    }
 }
 
 ?>

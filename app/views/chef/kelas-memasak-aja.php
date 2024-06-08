@@ -51,7 +51,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pt-8">
                 <?php foreach ($kelas_masaks as $kelas_masak): ?>
-                <div class="bg-gray-100 rounded-lg overflow-hidden flex items-center justify-between flex-col">
+                <a href="<?=$baseurl . 'chef-lihat-kelas/' . $kelas_masak['id']?>" class="bg-gray-100 rounded-lg overflow-hidden flex items-center justify-between flex-col">
                     <div class="flex justify-between items-center flex-col min-w-30%">
                     <img src="./image/kelas/<?= $kelas_masak['poster'] ?? 'card1.png' ?>" alt="" class="w-full object-cover mb-4">
                     <h3 class="text-lg font-semibold text-light-logo mb-2 text-center"><?= $kelas_masak['judul'];?></h3>
@@ -64,7 +64,7 @@
                         </div>
                                         
                     </div>                      
-                </div>
+                </a>
                 <?php endforeach; ?>  
             </div>
         </div>

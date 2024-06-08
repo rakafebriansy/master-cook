@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master Cook</title>
-    <link href="../master-cook/public/dist/output.css" rel="stylesheet">
+    <link href="../../master-cook/public/dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
             </ul>
             <div class="flex-grow"></div>
             <a href="<?=$baseurl . 'chef-profil'?>" class="hidden items-center justify-center gap-10 md:flex">
-                <img src="./image/user1.svg" alt="" class="w-full h-[50%]">
+                <img src="../image/user1.svg" alt="" class="w-full h-[50%]">
             </a>
         </nav>
     </header>
@@ -38,12 +38,12 @@
 
     <!-- hero start -->
     <div class="flex flex-col space-y-5 mx-10">
-        <img src="./image/lihat-chef.svg" alt="" class="w-full pt-4">
+        <img src="../image/kelas/<?=$kelas_masak['poster']?>" alt="" class="w-full pt-4">
     </div>
 
     <!-- main -->
     <div class="my-6 text-center">
-        <h3 class="text-light-logo text-6xl font-semibold">Menu Sehat ala Chef Arnold</h3>
+        <h3 class="text-light-logo text-6xl font-semibold"><?= $kelas_masak['judul'];?></h3>
     </div>
     <div class="bg-gray-100 mt-20">
         <div class="flex flex-col space-y-5 mx-10">
@@ -67,24 +67,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="">
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
-                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">Aisyah aqilah</td>
-                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">083527336112</td>
-                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">21 Mei 2024</td>
-                                    </tr>
-                                    <tr class="">
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2</td>
-                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">Dewi Sandra</td>
-                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">083527336113</td>
-                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">21 Mei 2024</td>
-                                    </tr>
-                                    <tr class="">
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">3</td>
-                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">Amanda Manopo</td>
-                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">083527336114</td>
-                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">21 Mei 2024</td>
-                                    </tr>
+                                    <?php foreach ($pendaftars as $key => $pendaftar): ?>
+                                        <tr class="">
+                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><?= $key;?></td>
+                                            <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"><?= $pendaftar['nama'];?></td>
+                                            <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"><?= $pendaftar['no_telp'];?></td>
+                                            <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"><?= $pendaftar['tanggal_daftar'];?></td>
+                                        </tr>
+                                    <?php endforeach ?>
                                 </tbody>
                             </table>
                         </div>
@@ -98,7 +88,7 @@
     <section class="py-20 bg-white">
         <div class="grid grid-cols-1 gap-x-6 gap-y-4 px-10">
             <div class="rounded-3xl w-full h-[10rem] flex flex-col justify-center items-center bg-gray-100 text-center relative">
-                <img src="./image/Vector.png" alt="" class="right-0 w-[25%] absolute z-10 h-full">
+                <img src="../image/Vector.png" alt="" class="right-0 w-[25%] absolute z-10 h-full">
                 <h1 class="text-center text-2xl font-semibold text-light-logo">Cooking Master</h1>
             </div>
             <div class="rounded-3xl w-full py-6 bg-gray-100 text-center">

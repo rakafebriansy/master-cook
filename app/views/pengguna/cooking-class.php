@@ -48,7 +48,32 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pt-8">
-            <?php foreach ($kelas_masaks as $kelas_masak): ?>
+            <?php $ids = [];
+             foreach ($kelas_masaks as $kelas_masak): 
+                if(in_array($kelas_masak['id'],$ids)) {
+                    continue;
+                    }
+                else {
+                    $ids[] = $kelas_masak['id']; 
+                }
+                
+                ?>
+                <?php if(isset($kelas_masak['id_user'])): ?>
+
+                <a href="<?=$baseurl . 'pengguna-lihat-kelas/' . $kelas_masak['id_kelas_masak']?>" class="bg-gray-100 cursor-pointer rounded-lg overflow-hidden flex items-center justify-between flex-col">
+                    <div class="flex justify-between items-center flex-col min-w-30%">
+                    <img src="./image/kelas/<?= $kelas_masak['poster'] ?? 'card1.png' ?>" alt="" class="w-full object-cover mb-4">
+                    <h3 class="text-lg font-semibold text-light-logo mb-2 text-center"><?= $kelas_masak['judul'];?></h3>
+                    <p class="text-black text-base text-center"><?= $kelas_masak['ringkasan'];?></p>
+                    </div>
+                    <div class="mt-4 w-full flex items-center justify-between">
+                        <div>
+                            <h1 class="text-xs text-gray-700 font-normal"><?= $kelas_masak['tanggal'];?></h1>
+                            <h1 class="text-xs text-gray-700 font-normal"><?= $kelas_masak['lokasi'];?></h1>
+                        </div>
+                    </div>                      
+                </a>
+            <?php else: ?>
                 <div class="bg-gray-100 rounded-lg overflow-hidden flex items-center justify-between flex-col">
                     <div class="flex justify-between items-center flex-col min-w-30%">
                     <img src="./image/kelas/<?= $kelas_masak['poster'] ?? 'card1.png' ?>" alt="" class="w-full object-cover mb-4">
@@ -64,10 +89,12 @@
                         <a href="pengguna-daftar/<?=$kelas_masak['id']?>"
                             class="px-6 py-1 bg-light-logo text-white text-sm font-normal rounded-full hover:bg-blue-900 transition duration-200">
                             Daftar
-                        </a>                   
+                        </a>            
                     </div>                      
                 </div>
-                <?php endforeach; ?>  
+            <?php endif ?>       
+            <?php
+            endforeach; ?>  
             </div>
         </div>
     </section>

@@ -43,15 +43,20 @@ Router::add('GET', $baseurl . 'chef-profil', ProfilController::class, 'chefProfi
 Router::add('GET', $baseurl . 'chef-edit-profil', ProfilController::class, 'chefEditProfil');
 Router::add('GET', $baseurl . 'chef-buat-kelas', KelasController::class, 'chefBuatKelas');
 Router::add('POST', $baseurl . 'chef-buat-kelas', KelasController::class, 'chefDoBuatKelas');
+Router::add('GET', $baseurl . 'chef-lihat-kelas/([0-9a-zA-Z]*)', KelasController::class, 'chefLihatKelas');
+Router::add('POST', $baseurl . 'chef-edit-kelas', KelasController::class, 'chefDoEditKelas');
+Router::add('GET', $baseurl . 'chef-edit-kelas/([0-9a-zA-Z]*)', KelasController::class, 'chefEditKelas');
+Router::add('GET', $baseurl . 'chef-lihat-pendaftar/([0-9a-zA-Z]*)', KelasController::class, 'chefLihatPendaftar');
 
 Router::add('GET', $baseurl . 'pengguna-register', RoleController::class, 'penggunaRegister');
 Router::add('POST', $baseurl . 'pengguna-register', RegisterController::class, 'penggunaRegister');
-Router::add('GET', $baseurl . 'pengguna-dashboard', DashboardController::class, 'penggunaDashboard');
+Router::add('GET', $baseurl . 'pengguna-dashboard', KelasController::class, 'penggunaKelasMemasak');
 // Router::add('GET', $baseurl . 'pengguna-kelas-memasak', KelasController::class, 'penggunaKelasMemasak');
 Router::add('GET', $baseurl . 'pengguna-profil', ProfilController::class, 'penggunaProfil');
 Router::add('GET', $baseurl . 'pengguna-edit-profil', ProfilController::class, 'penggunaEditProfil');
 Router::add('GET', $baseurl . 'pengguna-daftar/([0-9a-zA-Z]*)', KelasController::class, 'penggunaDaftar');
 Router::add('POST', $baseurl . 'pengguna-daftar-kelas', KelasController::class, 'penggunaDoDaftar');
+Router::add('GET', $baseurl . 'pengguna-lihat-kelas/([0-9a-zA-Z]*)', KelasController::class, 'penggunaLihatKelas');
 
 Router::add('GET', $baseurl . 'logout', RoleController::class, 'logout');
 Router::add('GET', $baseurl . 'fresh', RoleController::class, 'fresh');

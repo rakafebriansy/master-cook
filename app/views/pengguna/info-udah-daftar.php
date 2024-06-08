@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master Cook</title>
-    <link href="../master-cook/public/dist/output.css" rel="stylesheet">
+    <link href="../../master-cook/public/dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -29,14 +29,14 @@
             </ul>
             <div class="flex-grow"></div>
             <a href="<?=$baseurl . 'pengguna-profil'?>" class="hidden items-center justify-center gap-10 md:flex">
-                <img src="./image/user1.svg" alt="" class="w-full h-[50%] cursor-pointer">
+                <img src="../image/user1.svg" alt="" class="w-full h-[50%] cursor-pointer">
             </a>
         </nav>
     </header>
     <!-- navbar end -->
 
     <div class="px-6 bg-gray-100">
-        <img src="./image/masak.svg" alt="" class="w-full pt-4">
+        <img src="../image/kelas/<?=$kelas_masak['poster']?>" alt="" class="w-full pt-4">
     </div>
 
     <!--  -->
@@ -45,25 +45,25 @@
             <div class="rounded-2xl w-full py-2 bg-white text-center">
                 <div class="grid grid-cols-1 gap-4 p-4 sm:grid-cols-4 sm:px-8">
                     <div class="flex items-center bg-white rounded-sm overflow-hidden ">
-                        <img src="./image/Time Circle 6.svg" alt="" class="h-full">
+                        <img src="../image/Time Circle 6.svg" alt="" class="h-full">
                         <div class="px-4 text-gray-700">
                             <h3 class="text-base tracking-wider">13:50 - 16:10 WIB</h3>
                         </div>
                     </div>
                     <div class="flex items-center bg-white rounded-sm overflow-hidden ">
-                        <img src="./image/Calender 1.svg" alt="" class="h-full">
+                        <img src="../image/Calender 1.svg" alt="" class="h-full">
                         <div class="px-4 text-gray-700">
                             <h3 class="text-base tracking-wider">21 Mei 2024</h3>
                         </div>
                     </div>
                     <div class="flex items-center bg-white rounded-sm overflow-hidden ">
-                        <img src="./image/Location.svg" alt="" class="h-full">
+                        <img src="../image/Location.svg" alt="" class="h-full">
                         <div class="px-4 text-gray-700">
                             <h3 class="text-base tracking-wider">Jember Town Square</h3>
                         </div>
                     </div>
                     <div class="flex items-center bg-white rounded-sm overflow-hidden ">
-                        <img src="./image/Tag.svg" alt="" class="h-full">
+                        <img src="../image/Tag.svg" alt="" class="h-full">
                         <div class="px-4 text-gray-700">
                             <h3 class="text-base tracking-wider">150.000</h3>
                         </div>
@@ -89,7 +89,6 @@
                 <p class="text-black font-normal text-lg"> 2.  Peserta diharapkan mengenakan pakaian yang nyaman dan sepatu tertutup untuk keamanan.</p>
                 <p class="text-black font-normal text-lg"> 3.  Semua peralatan dan bahan memasak akan disediakan. Peserta tidak perlu membawa peralatan pribadi.</p>
             </div>
-            
         </div>
     </div>
 
@@ -97,7 +96,7 @@
     <section class="py-20 bg-white">
         <div class="grid grid-cols-1 gap-x-6 gap-y-4 px-10">
             <div class="rounded-3xl w-full h-[10rem] flex flex-col justify-center items-center bg-gray-100 text-center relative">
-                <img src="./image/Vector.png" alt="" class="right-0 w-[25%] absolute z-10 h-full">
+                <img src="../image/Vector.png" alt="" class="right-0 w-[25%] absolute z-10 h-full">
                 <h1 class="text-center text-2xl font-semibold text-light-logo">Cooking Master</h1>
             </div>
             <div class="rounded-3xl w-full py-6 bg-gray-100 text-center">
